@@ -202,6 +202,7 @@ text-align: center;
   width: 100%;
   height: 100%;
   margin: auto;
+  object-fit: cover;
 }
 .Global-campus>P{
   margin: 10px;
@@ -316,7 +317,7 @@ border-radius: 10px;
 display: flex;
 }
 .testi> div{
- 
+ overscroll-behavior: contain;
   overflow: scroll;
 }
 .testi> div p{
@@ -492,4 +493,81 @@ gap: 30px;
 .about-abt1{
   text-align: center;
   margin-top: 5%;
+}
+/* ------------------blog---------- */
+.blog-contain{
+  width: 80%;
+  margin: 5%;
+ display:grid;
+grid-template-columns: repeat(2, 1fr );
+ justify-content: space-evenly;
+ gap: 40px;
+}
+.blog-contain> div> img{
+  width: 100%;
+}
+.blog-contain> div> h1{
+  margin-top: 3%;
+  font-size: 30px;
+}
+.blog-contain> div> p{
+  color: rgb(114, 106, 106);
+padding: 0;
+}
+.right> h3{
+  background: #f44336;
+  min-block-size: 10px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.right div {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 8px;
+align-items: center   ;
+}
+.comment-box{
+  border: 1px solid #ccc;
+  margin: 50px 0;
+  padding: 10px 0;
+  
+}
+.comment-box h3{
+  text-align: left;
+
+}
+.comment-form input, .comment-form textarea{
+ 
+  padding: 10px;
+  display: flex;
+  width: 100%;
+  background: #ccc;
+  border: none;
+  margin-bottom: 2%;
+  margin-left: 1%;
+}
+@media screen and (min-width:300px) and (max-width:700px){
+  .blog-contain{
+    width: 80%;
+    margin: 5%;
+   display: block;
+  }
+
+}
+/* ------------contact page------ */
+.contact-us{
+  width: 80%;
+  margin: 10%;
+}
+.location> iframe{
+  width: 100%;
+  height: 300px;
+
+  
+}
+.svg-img{
+  margin-bottom: 5%;
 }
